@@ -78,4 +78,6 @@ yum安装基本软件
 可以测试一下
 
 	echo "hello world2" | mutt -s "test mail" -- caiusasiniuspullus@gmail.com
+	
+![](http://h.picphotos.baidu.com/album/s%3D550%3Bq%3D90%3Bc%3Dxiangce%2C100%2C100/sign=96f79c055766d0167a199e2da710a53a/b7fd5266d01609240434bdd3d10735fae7cd34e0.jpg?referer=25ae93f94f90f6035da7a87774bf&x=.jpg)
 
