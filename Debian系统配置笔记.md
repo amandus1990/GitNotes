@@ -1,0 +1,2 @@
+第一点，debian比RedHat好用得多！aircrack-ng和crunch和nethack等等都可以直接安装！
+
