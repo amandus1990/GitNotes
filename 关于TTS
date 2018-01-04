@@ -1,0 +1,25 @@
+谷歌有两个著名的TTS项目，一是WaveNet：
+https://deepmind.com/blog/wavenet-generative-model-raw-audio/
+二是更先进的TacoTron2：
+https://research.googleblog.com/2017/12/tacotron-2-generating-human-like-speech.html
+
+Python上具体实现TTS有几种方式，
+
+第一种依赖windows平台：
+#coding:utf-8
+import win32com.client
+import time
+spk = win32com.client.Dispatch("SAPI.SpVoice")
+text=u'''继旗下保险代理公司“微保”获批之后，腾讯再度拿下一块关键性的金融牌照——第三方基金销售牌照。 
+1月2日，深圳市证监局网站发布批复：核准腾安信息科技（深圳）有限公司的证券投资基金销售业务资格；核准公司名称变更为“腾安基金销售（深圳）有限公司”，在公司经营范围中增加“基金销售”业务。 '''
+spk.Speak(text)
+
+第二种依赖Google的API，gtts包：
+#coding:utf-8
+from gtts import gTTS
+text=u'''A股：沪指收报3348.33点，涨1.24%，成交额2278亿。深成指收报11178.05点，涨1.25%，成交额2177亿。创业板收报1769.67点，涨0.97%，成交额469亿。'''
+# tts = gTTS(text=text, lang='zh', slow=True)
+tts = gTTS(text=text, lang='zh')
+tts.save("hello.mp3")
+
+第三种依赖pyttsx/pyttsx3包，但我在Windows和MacOS上都没能配置成功。
