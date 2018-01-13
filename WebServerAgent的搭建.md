@@ -51,7 +51,7 @@ Xcode中选Product-Test，开始在手机上安装文件，但第一次可能不
 ```
 iproxy 8100 8100 [UDID]
 ```
-其中手机的UDID可以用iOS端Safari去https://fir.im/udid获取，一台机子时可以不写udid。
+其中手机的UDID可以用iOS端Safari去 https://fir.im/udid 获取，一台机子时可以不写udid。
 
 此时电脑打开localhost:8100应有与手机同样的json字符了。
 
@@ -71,6 +71,4 @@ https://www.cnblogs.com/dzpsite/p/8241113.html
 
 Python微信《跳一跳》辅助GitHub：
 https://github.com/wangshub/wechat_jump_game
-
-https://testerhome.com/topics/7220
 
