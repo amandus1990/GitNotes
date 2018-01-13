@@ -13,10 +13,10 @@ iOS设备不需要越狱
 
 # 安装wda与配置证书
 
-'''
+```
 git clone https://github.com/facebook/WebDriverAgent
 ./Scripts/bootstrap.sh
-'''
+```
 可能要先用brew安装Carthage和node，因为bootstrap.sh脚本会使用Carthage下载所有的依赖，使用npm打包响应的js文件。
 
 ## 设置证书
@@ -48,18 +48,18 @@ Xcode中选Product-Test，开始在手机上安装文件，但第一次可能不
 先用brew安装usbmuxd和libimobiledevice。
 
 然后用如下命令把电脑的8100端口和手机的8100端口绑定：
-'''
+```
 iproxy 8100 8100 [UDID]
-'''
+```
 其中手机的UDID可以用iOS端Safari去https://fir.im/udid获取，一台机子时可以不写udid。
 
 此时电脑打开localhost:8100应有与手机同样的json字符了。
 
 # python应用wda
 
-'''
+```
 pip install facebook-wda
-'''
+```
 
 # 参考网页与应用
 
