@@ -60,3 +60,17 @@ iproxy 8100 8100 [UDID]
 '''
 pip install facebook-wda
 '''
+
+# 参考网页与应用
+
+iOS真机如何安装WebDriverAgent：
+https://testerhome.com/topics/7220
+
+微信跳一跳Python，Android和iOS操作步骤：
+https://www.cnblogs.com/dzpsite/p/8241113.html
+
+Python微信《跳一跳》辅助GitHub：
+https://github.com/wangshub/wechat_jump_game
+
+https://testerhome.com/topics/7220
+
